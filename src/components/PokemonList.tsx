@@ -10,7 +10,7 @@ export default function PokemonList() {
   const observer: any = useRef();
   const lastPokemonRef = useCallback(
     (node) => {
-      if (loading) return;
+      if (loading || error) return;
       if (observer.current) observer.current.disconnect();
       observer.current = new IntersectionObserver((entries) => {
         if (entries[0].isIntersecting) {
@@ -21,7 +21,7 @@ export default function PokemonList() {
       });
       if (node) observer.current.observe(node);
     },
-    [loading, hasMore]
+    [loading, hasMore, error]
   );
 
   return (
