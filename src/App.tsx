@@ -1,10 +1,9 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import PokemonList from "./components/PokemonList";
 
 function App() {
-  return (
-    <div>Pokemon</div>
-  );
+  return <PokemonList />;
 }
 
 export default App;
