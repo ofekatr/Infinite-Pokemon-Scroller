@@ -1,3 +1,8 @@
+# Infinite Pokemon Scrolling
+
+A practice app implemented with React for infinite scrolling, using the Pokemon API to fetch Pokemon names to scroll through.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
